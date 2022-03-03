@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import s from './App.module.css'
+import {Routes, Route} from 'react-router-dom';
+import Profile from './Components/Header/Profile/Profile';
+import LayOut from './Components/LayOut'
+import HomePage from './Components/HomePage/HomePage'
+import Messages from './Components/Messages/Messages'
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className={s.wrapper}>
+          <Routes>
+            <Route path='/' element={<LayOut />}>
+              <Route index element={<HomePage />}/>
+              <Route path='profile' element={<Profile users={props.users} />}/>
+              <Route path='messages/*' element={<Messages users={props.users}/>}/>
+            </Route>
+          </Routes>
+      </div>
   );
 }
 

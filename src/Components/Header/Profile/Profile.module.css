@@ -1,0 +1,28 @@
+.container {
+    margin-top: 50px;
+}
+
+.title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 200px;
+    background-color: darkgrey;
+}
+.list {
+    max-width: 300px;
+    margin-left: 100px;
+    border-right: 2px solid darkgrey;
+}
+
+.friends {
+    width: 450px;
+    height: 100vh;
+}

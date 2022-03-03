@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from 'react-router-dom';
+import male from './Components/Header/Profile/images/user-male.png'
+import female from './Components/Header/Profile/images/user-female.png'
+
+const users = [
+  {id: 1, name: 'Tomas Vernar', src:male, isOnline: true},
+  {id: 2, name: 'Zouie Vexmart', src:female, isOnline: true},
+  {id: 3, name: 'Linsie Mester', src:female, isOnline: false},
+  {id: 4, name: 'Movich Kernel', src:male, isOnline: false},
+]
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+      <App users={users}/>
+    </BrowserRouter>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,0 +1,49 @@
+.item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    padding: 15px 0 15px;
+    position: relative;
+}
+
+.item:hover {
+    background-color: lightgreen;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    background-color: aquamarine;
+    bottom: 0;
+}
+
+.item span {
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+}
+
+.circle.active {
+    background-color: chartreuse;
+}
+
+.circle.nonActive {
+    background-color: red;
+}
