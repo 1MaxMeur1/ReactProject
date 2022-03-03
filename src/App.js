@@ -12,8 +12,8 @@ function App(props) {
           <Routes>
             <Route path='/' element={<LayOut />}>
               <Route index element={<HomePage />}/>
-              <Route path='profile' element={<Profile users={props.users} />}/>
-              <Route path='messages/*' element={<Messages users={props.users}/>}/>
+              <Route path='profile' element={<Profile users={props.state.users} />}/>
+              <Route path='messages/*' element={<Messages users={props.state.users}/>}/>
             </Route>
           </Routes>
       </div>
