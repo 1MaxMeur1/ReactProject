@@ -11,7 +11,7 @@ function App(props) {
       <div className={s.wrapper}>
           <Routes>
             <Route path='/' element={<LayOut />}>
-              <Route index element={<HomePage />}/>
+              <Route index element={<HomePage cards={props.state.cards}/>}/>
               <Route path='profile' element={<Profile users={props.state.users} />}/>
               <Route path='messages/*' element={<Messages users={props.state.users}/>}/>
             </Route>

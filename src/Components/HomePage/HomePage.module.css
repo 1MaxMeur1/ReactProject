@@ -23,3 +23,37 @@ h3::after {
     padding: 40px 0 40px;
     display: flex;
 }
+
+.form {
+    display: block;
+    padding-left: 50px;
+}
+
+.btn {
+    background-color: aqua;
+    padding: 6px 20px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.btn:hover {
+    background-color: lightseagreen;
+}
+
+.textarea {
+    display: block;
+    resize: none;
+    height: 75px;
+    width: 450px;
+    margin-bottom: 50px;
+    outline: none;
+    border: 2px solid slateblue;
+}
+.textarea::placeholder {
+    padding: 5px;
+    font-size: 20px;
+}

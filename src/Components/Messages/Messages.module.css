@@ -51,6 +51,8 @@
     height: 150px;
     resize: none;
     padding: 15px;
+    border: 2px solid steelblue;
+    outline: none;
 }
 
 .form textarea::placeholder {
@@ -64,4 +66,8 @@
     padding: 10px 40px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: lightseagreen;
 }

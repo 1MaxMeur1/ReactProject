@@ -20,7 +20,7 @@ const Messages = (props) => {
                 </div>
                 <form className={s.form}>
                     <textarea placeholder='Type message...'></textarea>
-                    <button className={s.btn}>Enter</button>
+                    <button className={s.btn} onClick={ () => {alert('Stop it')}}>Enter</button>
                 </form>
             </div>
         </div>

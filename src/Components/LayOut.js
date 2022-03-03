@@ -13,9 +13,9 @@ const LayOut = () => {
             <Outlet />
         </div>
         
-        <footer className={s.footer}>
+        {/* <footer className={s.footer}>
             2018
-        </footer>
+        </footer> */}
     </div>
 }
 

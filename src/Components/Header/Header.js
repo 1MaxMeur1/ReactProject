@@ -13,7 +13,7 @@ const Header = (props) => {
         </header>
         <ul className={s.list}>
             <li className={s.item}>
-                <NavLink className={s.link} to='/tasks'>Tasks</NavLink>
+                <NavLink className={s.link} to='/notes'>Notes</NavLink>
             </li>
             <li className={s.item}>
                 <NavLink className={s.link} to='/tasks'>IELTS</NavLink>
